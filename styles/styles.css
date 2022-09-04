@@ -675,8 +675,8 @@ address {
   height: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 1000ms linear,
-    visibility 1000ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
  
 .backdrop.is-hidden {
@@ -699,7 +699,7 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: scale 500ms linear;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .modal-close-btn {
